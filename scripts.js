@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', fetchReviews);
 
 function fetchReviews() {
-    fetch('http://<your-vm-ip>:5000/reviews')  // Replace <your-vm-ip> with the IP address of your VM
+    fetch('http://52.228.27.47:5000/reviews')  // Replace <your-vm-ip> with the IP address of your VM
         .then(response => response.json())
         .then(data => {
             const reviewsDiv = document.getElementById('reviews');
